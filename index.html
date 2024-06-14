@@ -6,13 +6,21 @@
       let myString = "Hello, JavaScript!";
       console.log(myNumber, myString);
 
+      //Iterates from 0 to 10 and prints the value of every iteration
+
       for (let i = 0; i <= 10; i++) {
         console.log(i);
       }
 
+      // Iterates from 1 to 5 and multiplies the resulting i value with 3 to get multiples of 3
+      // The result of every iteration is then outputed to the console
+
       for (let i = 1; i <= 5; i++) {
         console.log(3 * i);
       }
+
+      // addNumbers functions declaration
+      // returns the sum of two numbers
 
       const addNumbers = (num1, num2) => {
         let sum = num1 + num2;
@@ -20,15 +28,19 @@
           `The sum of your two numbers ${num1} and ${num2} is ${sum}`
         );
       };
+
+      // multiplyNumbers function declaration
+      // returns product of two numbers
+
       const multiplyNumbers = (num1, num2) => {
-        let product = num1 + num2;
+        let product = num1 * num2;
         console.log(
           `The product of your two numbers ${num1} and ${num2} is ${product}`
         );
       };
 
+      // This calls our functions
       addNumbers(1, 2);
-
       multiplyNumbers(20, 10);
     </script>
   </body>
